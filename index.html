@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="app.js" defer></script>
+    <title>Tic Tac Toe Game</title>
+  </head>
+  <body>
+    <div class="black-background">
+    </div>
+    <section class="choose-name">
+      <form>
+        <h2>Choose your name</h2>
+        <label for="player-name">Player name</label>
+        <input type="text" name="player-name" id="player-name" required>
+        <p id="form-error"></p>
+        <button class="name-no" type="button">cancel</button>
+        <button class="name-yes" type="submit">confirm</button>
+      </form>
+    </section>
+    <header>
+      <h1>Play Tic, Tac, Toe</h1>
+      <p>Built with HTML, CSS, JavaScript and - of course - lots of love!</p>
+    </header>
+    <section class="player-section">
+      <div class="player">
+        <p>player 1</p>
+        <p class="player-name" id="player1-name">player name</p>
+        <p class="player-sympole">X</p>
+        <a class="edit-player1" data-player="1">EDIT</a>
+      </div>
+      <div class="player">
+        <p>player 2</p>
+        <p class="player-name" id="player2-name">player name</p>
+        <p class="player-sympole">O</p>
+        <a class="edit-player2" data-player="2">EDIT</a>
+      </div>
+    </section>
+    <button id="start-Game">Start new Game</button>
+    <section id="winner-display">
+      <p id="winner-name"></p>
+      <p>Click "Start New Game" above, to start a new game!</p>
+    </section>
+    <p id="turn-text">It's your turn <span id="player-turn-name"></span></p>
+    <ul id="game">
+      <li class="cell" id="cell1"></li>
+      <li class="cell" id="cell2"></li>
+      <li class="cell" id="cell3"></li>
+      <li class="cell" id="cell4"></li>
+      <li class="cell" id="cell5"></li>
+      <li class="cell" id="cell6"></li>
+      <li class="cell" id="cell7"></li>
+      <li class="cell" id="cell8"></li>
+      <li class="cell" id="cell9"></li>
+    </ul>
+  </body>
+</html>
